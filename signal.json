@@ -1,0 +1,12 @@
+{
+  "test_validation_mode": "subset",
+  "validation_test_files": [
+    "test/core/math/vec2.test.mjs",
+    "test/core/math/vec3.test.mjs",
+    "test/core/guid.test.mjs",
+    "test/core/string.test.mjs",
+    "test/core/path.test.mjs"
+  ],
+  "validation_test_file_count": 5,
+  "validation_tests_executed": null
+}
