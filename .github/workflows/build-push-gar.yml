@@ -6,8 +6,10 @@ on:
 
 permissions:
   contents: read
-  id-token: write
 
 jobs:
-  build-and-push:
-    uses: handshake-coding/handshake-orchestration/.github/workflows/build-push-gar.yml@main
+  skipped-on-fork:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip GAR publish
+        run: echo "Artifact registry publish is disabled on this fork."
