@@ -1,0 +1,17 @@
+name: Helix Validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker seeding gate (fork)
+        run: |
+          echo "Official Helix harness targets branch docker-golden-solution."
+          echo "This fork keeps the workflow file but skips the remote reusable job."
